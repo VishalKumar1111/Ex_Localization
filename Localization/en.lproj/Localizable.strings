@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by RLogixxTraining on 19/07/24.
+  
+*/
+
+"hello" = "Hello World";
+"good" = "Good Morning";
