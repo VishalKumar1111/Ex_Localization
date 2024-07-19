@@ -20,14 +20,21 @@ class ViewController: UIViewController {
 
     @IBAction func btn_seg(_ sender: UISegmentedControl) {
         if seg.selectedSegmentIndex == 0 {
-            lblGood.text = "hello".localizableString(loc: "en")
-            lbl_hwllo.text = "good".localizableString(loc: "en")
+           LanguageChange(str: "en")
         }else{
-            lblGood.text = "hello".localizableString(loc: "hi")
-            lbl_hwllo.text = "good".localizableString(loc: "hi")
+           LanguageChange(str: "hi")
         }
         
     }
+    
+    func LanguageChange(str : String){
+        lblGood.text = "hello".localizableString(loc: str)
+        lbl_hwllo.text = "good".localizableString(loc: str)
+        
+        
+    }
+    
+    
 }
 extension String{
     func localizableString(loc: String) -> String {
